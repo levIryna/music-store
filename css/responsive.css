@@ -1,0 +1,27 @@
+/* Mobile-first: базові стилі для <480px */
+
+/* Планшети (480–768px) */
+@media (min-width: 480px) {
+    .header-container { flex-direction: row; }
+    .search-bar input { width: 300px; }
+    .product-list { grid-template-columns: repeat(2, 1fr); }
+    .filters div { display: flex; gap: 15px; }
+    .cart li { flex-wrap: nowrap; }
+}
+
+/* Десктоп (>768px) */
+@media (min-width: 768px) {
+    body { padding: 40px; }
+    header { padding: 20px 40px; }
+    .product-list { grid-template-columns: repeat(3, 1fr); gap: 30px; }
+    .filters { display: flex; flex-wrap: wrap; gap: 20px; }
+    .product-detail { padding: 40px; max-width: 900px; }
+    button { padding: 14px 28px; }
+    .order-form { max-width: 600px; margin: 0 auto; }
+}
+
+/* Дуже маленькі екрани (<320px) — рідко, але для безпеки */
+@media (max-width: 320px) {
+    button { font-size: 0.9em; padding: 10px; }
+    input { font-size: 0.9em; }
+}

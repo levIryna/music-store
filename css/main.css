@@ -1,0 +1,47 @@
+:root {
+	--bg-color: #f4f7fa; /* Світлий фон */
+	--text-color: #333; /* Темний текст */
+	--accent-color: #4a90e2; /* Синій акцент */
+	--secondary-color: #ff6b6b; /* Червоний для кнопок/акцентів */
+	--border-color: #ddd; /* Сірий бордер */
+	--shadow: 0 4px 12px rgba(0,0,0,0.1); /* Тінь для елементів */
+	--transition: all 0.3s ease; /* Плавні переходи */
+}
+.dark {
+	--bg-color: #1e1e1e;
+	--text-color: #ddd;
+	--accent-color: #4a90e2;
+	--secondary-color: #ff6b6b;
+	--border-color: #444;
+	--shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+	padding: 20px;
+	transition: var(--transition);
+}
+button {
+	background: var(--accent-color);
+	color: white;
+	border: none;
+	padding: 12px 24px;
+	cursor: pointer;
+	border-radius: 8px;
+	font-weight: 500;
+	box-shadow: var(--shadow);
+	transition: var(--transition);
+}
+button:hover {
+	background: #92b3ec;
+	transform: scale(1.05); /* Легке збільшення при наведенні */
+	box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+a { 
+	color: var(--accent-color); 
+	text-decoration: none; 
+	transition: var(--transition); 
+}
+a:hover { 
+	color: var(--secondary-color); 
+}
